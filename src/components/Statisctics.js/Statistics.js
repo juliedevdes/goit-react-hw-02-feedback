@@ -1,5 +1,6 @@
 import React from "react";
 import Notification from "../Notification/Notification.js";
+import PropTypes from "prop-types";
 
 export default class Statistics extends React.Component {
   static defaultProps = {
@@ -9,7 +10,13 @@ export default class Statistics extends React.Component {
     total: 0,
     positivePercentage: 0,
   };
-  // static propTypes = {};
+  static propTypes = {
+    good: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.number.isRequired,
+  };
 
   render() {
     if (this.props.total === 0) {
