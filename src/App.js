@@ -1,4 +1,3 @@
-import "./App.css";
 import React from "react";
 
 import Statistics from "./components/Statisctics.js/Statistics";

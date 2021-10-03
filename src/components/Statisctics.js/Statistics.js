@@ -1,6 +1,7 @@
 import React from "react";
 import Notification from "../Notification/Notification.js";
 import PropTypes from "prop-types";
+import s from "./Statistics.module.css";
 
 export default class Statistics extends React.Component {
   static defaultProps = {
@@ -24,12 +25,14 @@ export default class Statistics extends React.Component {
     } else {
       return (
         <div>
-          <ul>
-            <li>Good: {this.props.good}</li>
-            <li>Neutral: {this.props.neutral}</li>
-            <li>Bad: {this.props.bad}</li>
-            <li>Total: {this.props.total}</li>
-            <li>Positive percentage: {this.props.positivePercentage} %</li>
+          <ul className={s.list}>
+            <li className={s.item}>Good: {this.props.good}</li>
+            <li className={s.item}>Neutral: {this.props.neutral}</li>
+            <li className={s.item}>Bad: {this.props.bad}</li>
+            <li className={s.item}>Total: {this.props.total}</li>
+            <li className={s.item}>
+              Positive percentage: {this.props.positivePercentage} %
+            </li>
           </ul>
         </div>
       );

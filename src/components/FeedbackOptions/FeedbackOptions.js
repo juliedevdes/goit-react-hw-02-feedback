@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import s from "./FeedbackOption.module.css";
 
 export default class FeedbackOptions extends React.Component {
   static defaultProps = {
@@ -17,10 +18,13 @@ export default class FeedbackOptions extends React.Component {
 
   render() {
     return (
-      <ul>
+      <ul className={s.list}>
         {this.props.options.map((option) => (
-          <li key={option}>
-            <button onClick={this.props.onLeaveFeedback[option]}>
+          <li key={option} className={s.item}>
+            <button
+              className={s.btn}
+              onClick={this.props.onLeaveFeedback[option]}
+            >
               {option}
             </button>
           </li>
