@@ -1,4 +1,4 @@
-# React Course 2-st homework ＼ʕ •ᴥ•ʔ＼
+# React Course 2-nd homework ＼ʕ •ᴥ•ʔ＼
 
 𓏲 𓏲 events and states 𓏲 𓏲 ／ʕ •ᴥ•ʔ／ 𓏲 𓏲 feedback widget
 
